@@ -6,7 +6,13 @@ namespace CS_OOP
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            CarSalesman orenTHeSalesman = new CarSalesman("Oren", "Cohen");
+            Console.WriteLine(orenTHeSalesman.FullName);
+            orenTHeSalesman.sell();
+
+            RetailSalesPerson ericTheSalesdude = new RetailSalesPerson("Erik", "Erikson");
+            Console.WriteLine(ericTheSalesdude.FullName);
+            ericTheSalesdude.sell();
         }
     }
 }
