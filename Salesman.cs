@@ -19,5 +19,8 @@ public abstract class Salesman
         this._lastName = lastName;
     }
 
-    public abstract void sell();
+    public virtual void sell(){
+        Console.WriteLine(string.Format("hi my name is {0}, buy this item!", this.FullName));
+    }
+    
 }
